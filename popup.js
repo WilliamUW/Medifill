@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+	chrome.tabs.executeScript(null, { code: "document.getElementById('first-name').value = '" + "William" + "'" });
+	chrome.tabs.executeScript(null, { code: "document.getElementById('input100').value = '" + "Wang" + "'" });
+	chrome.tabs.executeScript(null, { code: "document.getElementById('email').value = '" + "williamwang@gmail.com" + "'" });
+	chrome.tabs.executeScript(null, { code: "document.getElementById('message').value = '" + "SIN: 123456789" + "'" });
 
-			varxhrjson = JSON.parse(xhr.responseText);
-			/* Replace the below mentioned field id's with that of your form */
-			chrome.tabs.executeScript(null,{code:"document.getElementById('ap_customer_name').value = '"+varxhrjson['cname']+"'"});
-			chrome.tabs.executeScript(null,{code:"document.getElementById('ap_email').value = '"+varxhrjson['cmail']+"'"});
-			chrome.tabs.executeScript(null,{code:"document.getElementById('ap_password').value = '"+varxhrjson['cpassword']+"'"});
-			chrome.tabs.executeScript(null,{code:"document.getElementById('ap_password_check').value = '"+varxhrjson['cpassword']+"'"});
-			chrome.tabs.executeScript(null,{code:"document.getElementById('phone').value = '"+"134"+"'"});
+
+	chrome.tabs.executeScript(null, { code: "document.getElementById('phone').value = '" + "134" + "'" });
+
 });
