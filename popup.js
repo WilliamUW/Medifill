@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	chrome.tabs.executeScript(null, { code: "document.getElementById('message').value = '" + "Symptoms: Allergic to Bunnies" + "'" });
 
 
-	chrome.tabs.executeScript(null, { code: "document.getElementById('phone').value = '" + "134" + "'" });
+	chrome.tabs.executeScript(null, { code: "document.getElementById('phone').value = '" + "416-999-9090" + "'" });
 
 	chrome.tabs.executeScript(null, { code: "document.getElementById('drivers').value = '" + "W8374-19819-46214" + "'" });
 	chrome.tabs.executeScript(null, { code: "document.getElementById('sin').value = '" + "123456789" + "'" });
